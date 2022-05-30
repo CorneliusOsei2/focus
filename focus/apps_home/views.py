@@ -2,5 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-def home(request):
-    return render(request, 'landing.html')
+class HomeViews:
+    def home_top(request):
+        return render(request, 'homeTop.html')
+
+    def home_bottom(request):
+        return render(request, 'homeBottom.html')
