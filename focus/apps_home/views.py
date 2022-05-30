@@ -3,9 +3,10 @@ from django.shortcuts import render
 from .models import ContentsItem
 
 # Create your views here.
-class HomeViews:
-    def home_top(request):
-        return render(request, 'home_top.html')
+def landing(request):
+    return render(request, 'landing.html')
 
-    def home_bottom(request):
-        return render(request, 'home_bottom.html')
+def contents(request):
+    contents_items = ContentsItem.objects.all()
+
+    return render(request, 'contents.html', {'contents': list(contents_items)})
