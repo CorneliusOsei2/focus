@@ -1,32 +1,23 @@
-:root {
-    --red: hsl(0, 78%, 62%);
-    --blue: hsl(180, 62%, 55%);
-    --green: hsl(117, 97%, 64%);
-    --yellow: rgb(223, 186, 52);
-}
 
-div{
-    padding: 0;
-}
 
 .danger{
-    border-left: 5px solid var(--red);
+    border-left: 5px solid #dc3545;
     float: right;
     margin-right: 2%;
 }
 
 .primary{
-    border-right: 5px solid var(--blue);
+    border-right: 5px solid #0d6efd;
     margin-left: 2%;
 }
 
 .warning{
-    border-bottom: 5px solid var(--yellow);
+    border-bottom: 5px solid #ffc107;
     margin-left: 12%;
 }
 
 .success{
-    border-top: 5px solid var(--green);
+    border-top: 5px solid #198754;
     float: right;
     margin-right: 12%;
 }
@@ -57,7 +48,7 @@ div{
 
 .item-btn{
     width: 80px;
-    height: 25px;
+    height: 30px;
     margin: auto;
     margin-bottom: 5px;
     border-radius: 50px !important;
