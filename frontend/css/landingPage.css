@@ -1,3 +1,18 @@
+.landing{
+    min-height: 100vh;
+}
+
+.landing-left{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    
+}
+
+.landing-right{
+    min-height: 100vh;
+}
+
 
 .carousel-item {
     width: 100%;
