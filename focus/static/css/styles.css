@@ -1,4 +1,7 @@
 
+#contents{
+    overflow: hidden;
+}
 
 .danger{
     border-left: 5px solid #dc3545;
@@ -17,10 +20,11 @@
 }
 
 .success{
-    border-top: 5px solid #198754;
+    border-bottom: 5px solid #198754;
     float: right;
     margin-right: 12%;
 }
+
 
 .item{
     width: 320px;
@@ -52,4 +56,46 @@
     margin: auto;
     margin-bottom: 5px;
     border-radius: 50px !important;
+}
+
+@media only screen and (max-width: 600px){
+   .item-div{
+       width: 300px;
+       margin-bottom: 20px !important;
+       justify-content: center;
+       margin: auto;
+   }
+
+   .item{
+        width: 280px;    
+   }
+
+   .item-title{
+        top: 0;
+        padding-top: 0%;
+        height: 160px;
+    }
+
+    .item-description{
+        padding: 10px;
+        height: 60px;
+    }
+
+   .primary{
+       margin-left: unset;
+   }
+
+   .danger{
+       float: unset;
+        margin-right: unset;
+   }
+
+   .warning{
+        margin-left: unset;
+   }
+   
+   .success{
+        float: unset;
+        margin: auto;
+   }
 }
