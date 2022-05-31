@@ -1,12 +1,12 @@
-from django.db import models
-# Create your models here.
+from django.db.models import Model, CharField
 
-class ContentsItem(models.Model):
-    title =  models.CharField(max_length=100, null=False, default='')
-    description = models.CharField(max_length=100, null=False, default='')
-    destination = models.CharField(max_length=100, null=False, default='')
-    position = models.CharField(max_length=10, null=False, default='')
-    style = models.CharField(max_length=50, null=False, default='')
+# Create your models here.
+class ContentsItem(Model):
+    title =  CharField(max_length=100, null=False, default='')
+    description = CharField(max_length=100, null=False, default='')
+    destination = CharField(max_length=100, null=False, default='')
+    position = CharField(max_length=10, null=False, default='')
+    style = CharField(max_length=50, null=False, default='')
    
 
    
