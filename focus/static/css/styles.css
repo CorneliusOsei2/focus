@@ -50,6 +50,11 @@
     height: 80px;
 }
 
+
+.item-link{
+    margin: auto;
+}
+
 .item-btn{
     width: 80px;
     height: 30px;

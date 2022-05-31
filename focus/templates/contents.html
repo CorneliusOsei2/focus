@@ -19,7 +19,7 @@ rel="stylesheet">
         <div class="item {{item.style}}">
             <div class="item-title"><h2>{{item.title}}</h2></div>
             <div class="item-description">{{item.description}}</div>
-            <button class="item-btn btn btn-outline-{{item.style}}"> Explore </button>
+            <a class="item-link" href={{item.destination}}><button class="item-btn btn btn-outline-{{item.style}}"> Explore </button></a>
         </div>
     </div>
     {% endfor %}
