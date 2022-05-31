@@ -1,13 +1,15 @@
 
-.carousel {
-    width: 100%;
-}
 .carousel-item {
     height: 38rem;
     min-height: 300px;
     background: no-repeat scroll center scroll;
     -webkit-backgroundsize: cover;
     background-size: cover;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: auto;
 }
 
 /*
