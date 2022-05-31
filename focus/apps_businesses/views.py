@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from models import Business
+from .models import Business
+
 # Create your views here.
-def businesses():
+def businesses(request):
     ''' All businesses '''
     businesses = Business.objects.all()
-    return render('businesses.html', businesses)
+    return render(request, 'businesses.html', {'businesses':businesses})
+
