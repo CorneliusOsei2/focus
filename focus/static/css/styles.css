@@ -104,3 +104,31 @@
         margin: auto;
    }
 }
+
+/* ***************** Register User Page *******************************/
+.register{
+    justify-content: center;
+}
+.register-form{
+    margin: auto;
+    width: 450px;
+    margin-top: 80px;
+}
+
+#firstname{
+    width: 45%;
+    margin: auto;
+}
+
+#lastname{
+    width: 45%;
+    margin: auto;
+}
+
+.register-btn{
+    border-radius: 18px;
+}
+
+.register-img{
+    width: 180px;
+}
