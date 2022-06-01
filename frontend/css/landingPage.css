@@ -3,10 +3,10 @@
 }
 
 .landing-left{
-    background-color: white;
+    background-color: rgb(248, 245, 245);
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(2, 22, 2);
-    
+    color: hsl(120, 83%, 5%);
+    text-align: center;
 }
 
 .landing-right{
@@ -14,8 +14,13 @@
 }
 
 
-.landing-left{
-    background-color: rgb(248, 245, 245);
+.landing-left #h4{
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-decoration-style: solid;
+
 }
 
 .landing-right{
