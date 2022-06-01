@@ -8,7 +8,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: hsl(120, 83%, 5%);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 /*right side of landing page (slider)*/
 .landing-right{
@@ -27,11 +27,16 @@
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
     text-decoration-style: solid;
+    color: green;
 
 }
 /*height of slider*/
 .landing-right{
     min-height: 100vh;
+}
+.login-button button{
+    width: 120px;
+    background-color: rgb(71, 248, 71);
 }
 /*each item in the slider*/
 .carousel-item {
