@@ -34,6 +34,7 @@
 .landing-right{
     min-height: 100vh;
 }
+/*login button */
 .login-button button{
     width: 120px;
     background-color: rgb(71, 248, 71);
