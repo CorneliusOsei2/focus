@@ -8,6 +8,10 @@ section{
     min-height: 100vh;
     display: flex;
 }
+/*main page*/
+#sec-2{
+    padding: 0;
+}
 /*the landing page*/
 .landing{
     min-height: 100vh;
@@ -47,7 +51,8 @@ section{
 }
 
 .container {
-    padding:80px;
+    position: relative;
+    padding: 60px;
 }
 
 /*unordered list in left side of landing page*/
