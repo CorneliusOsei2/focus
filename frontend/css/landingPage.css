@@ -26,13 +26,13 @@
 
 /*all headings in left side of landing page*/
 .landing-left h4{
+    padding: 20px;
     text-align: center;
     font-weight: 100;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
     text-decoration-style: solid;
     color: green;
-
 }
 
 /*login button */
@@ -51,6 +51,7 @@
 /*the images in the slider*/
 .carousel-inner img{
     max-width: 100%;
+    min-height: 100vhe;
     height: 100vh;
 
 }
