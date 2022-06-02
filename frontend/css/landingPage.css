@@ -4,18 +4,40 @@
 }
 /*left side of landing page*/
 .landing-left{
-    background-color: rgb(248, 245, 245);
+    background-color: white;
     font-family: 'Times New Roman', Times, serif;
-    color: hsl(120, 83%, 5%);
+    color: green;
     text-align: center;
     padding: 10px;
+    font-size: large;
 }
+
+/*images on left page*/
+.landing-left img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 15%;
+}
+
+
 /*right side of landing page (slider)*/
 .landing-right{
     min-height: 100vh;
 }
+
 .card{
-    box-shadow:  rgba(197, 194, 194, 0.6);
+    box-shadow: 4px 4px 2px 2px rgba(250, 250, 250, 0.945);
+    margin-left: 90px;
+    margin-right: 70px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container {
+    padding:80px;
 }
 
 /*unordered list in left side of landing page*/
@@ -26,19 +48,22 @@
 
 /*all headings in left side of landing page*/
 .landing-left h4{
+    padding: 20px;
     text-align: center;
     font-weight: 100;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
     text-decoration-style: solid;
-    color: green;
-
+    color: rgb(2, 170, 2);
 }
 
 /*login button */
 .login-button button{
-    width: 120px;
-    background-color: rgb(71, 248, 71);
+    font-size: larger;
+    height: 45px;
+    width: 200px;
+    background-color: green;
+    color: aliceblue;
 }
 /*each item in the slider*/
 .carousel-item {
@@ -51,10 +76,9 @@
 /*the images in the slider*/
 .carousel-inner img{
     max-width: 100%;
+    min-height: 100vhe;
     height: 100vh;
-
 }
-
 
 .carousel-item::before{
     content: "";
@@ -66,6 +90,7 @@
     right: 0;
     opacity: 0.7;
 }
-
-/*
+.carousel-caption h4{
+    font-size: 40px;
+}
 
