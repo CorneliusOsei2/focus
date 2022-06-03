@@ -38,7 +38,9 @@ section{
     width: 30%;
     height: 15%;
 }
-
+.landing-left p{
+    white-space: pre-line;
+}
 
 /*right side of landing page (slider)*/
 .landing-right{
