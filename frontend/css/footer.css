@@ -20,6 +20,16 @@ ul{
     padding: 50px;
 }
 
+    max-width: 1270px;
+    margin: auto;
+}
+.footer{
+    background-color: rgb(113, 233, 161);
+    padding: 50px;
+}
+ul{
+    list-style: none;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -90,4 +100,5 @@ ul{
     .footer-col{
         width: 100%;
     }
+    text-align: center;
 }
