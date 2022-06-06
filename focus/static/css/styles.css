@@ -1,4 +1,59 @@
+/* **************************** Landing Page *******************************************/
+#landing{
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+}
 
+.landing-left{
+    background-color: rgb(248, 245, 245);
+    font-family: 'Times New Roman', Times, serif;
+    color: hsl(120, 83%, 5%);
+    text-align: center;
+}
+
+.landing-right{
+    height: 100%;
+}
+
+
+.landing-left #h4{
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-decoration-style: solid;
+
+}
+
+.landing-right{
+    height: 100%;
+}
+
+.landing-left ::first-letter{
+    color: green;
+    
+}
+.carousel-item {
+    width: 100%;
+    height: 42rem;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-backgroundsize: cover;
+    background-size: cover;
+}
+
+.carousel-inner img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+
+}
+
+.landing-carousel-img{
+    object-fit: contain;  
+}
+/* **************************** Main Contents Page *******************************************/
 #contents{
     overflow: hidden;
 }
@@ -11,7 +66,7 @@
 
 .primary{
     border-right: 5px solid #0d6efd;
-    margin-left: 2%;
+    margin-left: 10%;
 }
 
 .warning{
