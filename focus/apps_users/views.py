@@ -52,7 +52,7 @@ def login(request):
             user = authenticate(username=username, password=password)
 
             if user is not None:
-                return HttpResponse("Done!")
+                return redirect("/")
         return HttpResponse("sorry")
     else:
         return render(request, 'login.html')
