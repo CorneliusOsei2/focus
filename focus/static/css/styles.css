@@ -1,5 +1,8 @@
 #homepage{
-    scroll-behavior: smooth;
+    height: 100%;
+    overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 /* **************************** Landing Page *******************************************/
@@ -58,6 +61,7 @@
 /* **************************** Main Contents Page *******************************************/
 #contents{
     overflow: hidden;
+    background-color: aqua;
 }
 
 .danger{
