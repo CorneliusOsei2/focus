@@ -25,7 +25,6 @@
     height: 100%;
 }
 
-
 .landing-left #h4{
     text-align: center;
     font-weight: 100;
@@ -60,10 +59,12 @@
 .landing-carousel-img{
     object-fit: contain;  
 }
+
 /* **************************** Main Contents Page *******************************************/
 #contents{
     overflow: hidden;
-    background-color: aqua;
+    min-height: 100vh;
+    background-color: white;
 }
 
 .danger{
@@ -87,7 +88,6 @@
     float: right;
     margin-right: 12%;
 }
-
 
 .item{
     width: 320px;
@@ -195,7 +195,6 @@
 .register-img{
     width: 180px;
 }
-
 
 /* Teams page */
 .team-card{
