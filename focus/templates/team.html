@@ -2,61 +2,12 @@
 {% include "head_partial.html" with page_title="Team"%}
 
 
- <div class="container-fluid">
+<div class="container-fluid">
 
     <div class="row d-flex align-items-center justify-content-center">
 
-        <div class="team-card col-md-12">
-            <div class="card-div">
-
-                <div class="flip-card">
-                    <div class="card-front">
-                        <div class="teams-img d-flex align-items-center justify-content-center">
-                            <img src="frontend/images/team1.jpg" class="team-img" alt="Team member image">
-                        </div>
-
-                        <div class="teams-txt d-flex align-items-center justify-content-center flex-column">
-                            <p>Florence Nightingale</p>
-                            <span>Director of Operations</span>
-                        </div>
-                    </div>
-
-                    <div class="card-back">
-                        <h5> Florence </h5>
-                        <p>Lorem ipsum dolor </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-
-        <div class="team-card col-md-6">
-            <div class="card-div">
-
-                <div class="flip-card">
-                    <div class="card-front">
-                        <div class="teams-img d-flex align-items-center justify-content-center">
-                            <img src="frontend/images/team1.jpg" class="team-img" alt="Team member image">
-                        </div>
-
-                        <div class="teams-txt d-flex align-items-center justify-content-center flex-column">
-                            <p>Florence Nightingale</p>
-                            <span>Director of Operations</span>
-                        </div>
-                    </div>
-
-                    <div class="card-back">
-                        <h5> Florence </h5>
-                        <p>Lorem ipsum dolor </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="team-card col-md-6">
+        {% for member in team %}
+        <div class=`team-card {{member.style}}`>
             <div class="card-div">
                 <div class="flip-card">
                     <div class="card-front">
@@ -65,90 +16,21 @@
                         </div>
 
                         <div class="teams-txt d-flex align-items-center justify-content-center flex-column">
-                            <p>Florence Nightingale</p>
-                            <span>Director of Operations</span>
+                            <p>{{member.name}}</p>
+                            <span>{{member.role}}</span>
                         </div>
                     </div>
 
                     <div class="card-back">
-                        <h5> Florence </h5>
-                        <p>Lorem ipsum dolor </p>
+                        <h5> {{member.username}} </h5>
+                        <p>{{member.statement}}</p>
                     </div>
                 </div>
-
             </div>
         </div>
 
-        <div class="team-card col-md-4">
-            <div class="card-div">
-                <div class="flip-card">
-                    <div class="card-front">
-                        <div class="teams-img d-flex align-items-center justify-content-center">
-                            <img src="frontend/images/team1.jpg" class="team-img" alt="Team member image">
-                        </div>
-
-                        <div class="teams-txt d-flex align-items-center justify-content-center flex-column">
-                            <p>Florence Nightingale</p>
-                            <span>Director of Operations</span>
-                        </div>
-                    </div>
-
-                    <div class="card-back">
-                        <h5> Florence </h5>
-                        <p>Lorem ipsum dolor </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        
-        <div class="team-card col-md-4">
-            <div class="card-div">
-                <div class="flip-card">
-                    <div class="card-front">
-                        <div class="teams-img d-flex align-items-center justify-content-center">
-                            <img src="frontend/images/team1.jpg" class="team-img" alt="Team member image">
-                        </div>
-
-                        <div class="teams-txt d-flex align-items-center justify-content-center flex-column">
-                            <p>Florence Nightingale</p>
-                            <span>Director of Operations</span>
-                        </div>
-                    </div>
-
-                    <div class="card-back">
-                        <h5> Florence </h5>
-                        <p>Lorem ipsum dolor </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="team-card col-md-4">
-            <div class="card-div">
-                <div class="flip-card">
-                    <div class="card-front">
-                        <div class="teams-img d-flex align-items-center justify-content-center">
-                            <img src="frontend/images/team1.jpg" class="team-img" alt="Team member image">
-                        </div>
-
-                        <div class="teams-txt d-flex align-items-center justify-content-center flex-column">
-                            <p>Florence Nightingale</p>
-                            <span>Director of Operations</span>
-                        </div>
-                    </div>
-
-                    <div class="card-back">
-                        <h5> Florence </h5>
-                        <p>Lorem ipsum dolor </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+        {% endfor %}
+    
+    </div>
 
 </div>

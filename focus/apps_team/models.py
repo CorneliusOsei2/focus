@@ -1,9 +1,12 @@
+from tkinter.ttk import Style
 from django.db.models import *
 
 # Create your models here.
 class Team(Model):
-    first_name = CharField(null=False)
-    last_name = CharField(null=False)
-    image = CharField(null=False)
-    role = CharField(null=False)
-    statement = CharField(null=False)
+    first_name = CharField(max_length=100, null=False)
+    last_name = CharField(max_length=100, null=False)
+    username = CharField(max_length=100, null=False)
+    image = CharField(max_length=100, null=False)
+    role = CharField(max_length=100, null=False)
+    statement = CharField(max_length=100, null=False)
+    style = CharField(max_length=100, null=False)

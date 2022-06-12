@@ -198,23 +198,6 @@
 
 
 /* Teams page */
-
-*{
-    font-family: 'Montserrat', sans-serif;
-}
-/* 
-.col-md-12{
-    display: flex;
-}
-
-.col-md-6{
-    display: flex;
-}
-
-.col-md-4{
-    display: flex;
-} */
-
 .team-card{
     display: flex;
     justify-content: center;
