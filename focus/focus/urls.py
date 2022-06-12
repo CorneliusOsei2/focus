@@ -21,5 +21,5 @@ urlpatterns = [
     path('', include("apps_home.urls")),
     path('', include("apps_businesses.urls")),
     path('', include("apps_users.urls")),
-    path('', include("apps_users.urls"))
+    path('', include("apps_team.urls")),
 ]
