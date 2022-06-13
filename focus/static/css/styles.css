@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* **************************** Navbar *******************************************/
+.navbar{
+    width: 100vw;
+    position: fixed;
+    height: 60px;
+    background-color: white;
+    z-index: 2;
+}
+.nav-img{
+    height: 40px;
+} 
+
+.icon-img{
+    height: 35px;
+}
+
+
+
+/* **************************** Homepage Page *******************************************/
+
 #homepage{
-    height: 100%;
     overflow-y: scroll; 
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 /* **************************** Landing Page *******************************************/
 #landing{
-    min-height: 100vh;
     overflow: hidden;
     overflow-x: hidden;
 }
@@ -63,7 +81,7 @@
 /* **************************** Main Contents Page *******************************************/
 #contents{
     overflow: hidden;
-    min-height: 100vh;
+    padding-top: 70px;
     background-color: white;
 }
 
@@ -80,7 +98,7 @@
 
 .warning{
     border-bottom: 5px solid #ffc107;
-    margin-left: 12%;
+    margin-left: 18%;
 }
 
 .success{
@@ -172,6 +190,7 @@
 .register{
     justify-content: center;
 }
+
 .register-form{
     margin: auto;
     width: 450px;
@@ -258,3 +277,12 @@
     padding: 10px;
 }
 
+/* ****************************** Footer *********************** */
+footer{
+    position: relative;
+    font-family:Georgia;
+    color: green;
+    width: 100vw;
+    height: 40px;
+    bottom: 0;
+}
