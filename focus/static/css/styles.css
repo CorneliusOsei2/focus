@@ -17,13 +17,14 @@
 }
 
 
-
 /* **************************** Homepage Page *******************************************/
 
 #homepage{
+    height: 90vh;
     overflow-y: scroll; 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    background-image: url('https://www.myjoyonline.com/wp-content/uploads/2021/11/Peasant-Farmers.jpg');
 }
 
 /* **************************** Landing Page *******************************************/
