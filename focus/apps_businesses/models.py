@@ -6,9 +6,5 @@ class Business(Model):
     number = IntegerField(default=1)
     description = CharField(max_length=100, default="")
     growth_rate = IntegerField(default=100)
-    locations = CharField(max_length=100) # will be made into an
-
-    '''
-    business -> investors
-    business -> sales
-    '''
+    locations = CharField(max_length=100)
+    
