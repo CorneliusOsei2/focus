@@ -17,92 +17,79 @@
 }
 
 
-
 /* **************************** Homepage Page *******************************************/
 
-#homepage{
-    overflow-y: scroll; 
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
+
 
 /* **************************** Landing Page *******************************************/
 #landing{
+    height: 100vh;
     overflow: hidden;
-    overflow-x: hidden;
-}
-
-.landing-left{
-    background-color: rgb(248, 245, 245);
-    font-family: 'Times New Roman', Times, serif;
-    color: hsl(120, 83%, 5%);
-    text-align: center;
-}
-
-.landing-right{
-    height: 100%;
-}
-
-.landing-left #h4{
-    text-align: center;
-    font-weight: 100;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: underline;
-    text-decoration-style: solid;
-
-}
-
-.landing-right{
-    height: 100%;
-}
-
-.landing-left ::first-letter{
-    color: green;
-    
-}
-.carousel-item {
-    width: 100%;
-    height: 100%;
-    -webkit-backgroundsize: cover;
+    background-image: url('https://media.istockphoto.com/photos/little-ghanaian-canadian-girl-with-coconut-picture-id515225557?b=1&k=20&m=515225557&s=612x612&w=0&h=3rTzcqzW78pxNREQk3ZwcF_LxMfavBSfL530r1eQ02I=');
     background-size: cover;
 }
 
-.carousel-inner img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-bottom: 320px;
+    color: black;
+    width: 40%;
+    float: left;
 }
 
-.landing-carousel-img{
-    object-fit: contain;  
+.contents-arrow{
+    margin: auto;
+    margin-top: 150px
+}
+
+.contents-arrow-img{
+    height: 70px;
+    width: 50px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .25;}
+    50%{opacity: .5}
+    75%{opacity: .8;}
+    100%{opacity: 1;}
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-container{
+        width: 100vw;
+        padding-top: 40%;
+    }
 }
 
 /* **************************** Main Contents Page *******************************************/
 #contents{
     overflow: hidden;
     padding-top: 70px;
-    background-color: white;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .danger{
-    border-left: 5px solid #dc3545;
+    border-bottom: 6px solid #198754;
     float: right;
     margin-right: 2%;
 }
 
 .primary{
-    border-right: 5px solid #0d6efd;
+    border-bottom: 6px solid #198754;
     margin-left: 10%;
 }
 
 .warning{
-    border-bottom: 5px solid #ffc107;
+    border-bottom: 6px solid #198754;
     margin-left: 18%;
 }
 
 .success{
-    border-bottom: 5px solid #198754;
+    border-bottom: 6px solid #198754;
     float: right;
     margin-right: 12%;
 }
@@ -140,7 +127,7 @@
     width: 80px;
     height: 30px;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 50px !important;
 }
 
