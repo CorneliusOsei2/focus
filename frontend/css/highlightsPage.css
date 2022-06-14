@@ -1,7 +1,14 @@
+body{
+    background-color: rgb(212, 214, 212);
+}
+.slider{
+    position: relative;
+    margin: auto 20px;
+    width: 500px;
+}
 .carousel-item{
     background: no-repeat scroll center scroll;
     background-size: cover;
-
 }
 .carousel-item::before{
     content: "";
@@ -14,15 +21,18 @@
     opacity: 0.4;
 }
 .carousel-caption{
+    left: 20px;
     bottom: 50px;
     padding-left: 200px;
     padding-right: 200px;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: large;
 }
 .caption-area{
-    width: 400px;
-    max-width: 100%;
-    max-height: 100vh;
+    position: relative;
+    margin: 0;
+    left: -100px;
+    width: 300px;
     color: aliceblue;
     background-color: black;
     opacity: 0.5;
