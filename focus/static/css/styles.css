@@ -1,101 +1,109 @@
-#homepage{
-    height: 100%;
-    overflow-y: scroll; 
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* **************************** Navbar *******************************************/
+.navbar{
+    width: 100vw;
+    position: fixed;
+    height: 60px;
+    background-color: white;
+    z-index: 2;
 }
+.nav-img{
+    height: 40px;
+} 
+
+.icon-img{
+    height: 35px;
+}
+
+
+/* **************************** Homepage Page *******************************************/
+
+
 
 /* **************************** Landing Page *******************************************/
 #landing{
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
-    overflow-x: hidden;
-}
-
-.landing-left{
-    background-color: rgb(248, 245, 245);
-    font-family: 'Times New Roman', Times, serif;
-    color: hsl(120, 83%, 5%);
-    text-align: center;
-}
-
-.landing-right{
-    height: 100%;
-}
-
-
-.landing-left #h4{
-    text-align: center;
-    font-weight: 100;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: underline;
-    text-decoration-style: solid;
-
-}
-
-.landing-right{
-    height: 100%;
-}
-
-.landing-left ::first-letter{
-    color: green;
-    
-}
-.carousel-item {
-    width: 100%;
-    height: 100%;
-    -webkit-backgroundsize: cover;
+    background-image: url('https://media.istockphoto.com/photos/little-ghanaian-canadian-girl-with-coconut-picture-id515225557?b=1&k=20&m=515225557&s=612x612&w=0&h=3rTzcqzW78pxNREQk3ZwcF_LxMfavBSfL530r1eQ02I=');
     background-size: cover;
 }
 
-.carousel-inner img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-bottom: 320px;
+    color: black;
+    width: 40%;
+    float: left;
 }
 
-.landing-carousel-img{
-    object-fit: contain;  
+.contents-arrow{
+    margin: auto;
+    margin-top: 150px
 }
+
+.contents-arrow-img{
+    height: 70px;
+    width: 50px;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .25;}
+    50%{opacity: .5}
+    75%{opacity: .8;}
+    100%{opacity: 1;}
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-container{
+        width: 100vw;
+        padding-top: 40%;
+    }
+}
+
 /* **************************** Main Contents Page *******************************************/
 #contents{
     overflow: hidden;
-    background-color: aqua;
+    padding-top: 70px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .danger{
-    border-left: 5px solid #dc3545;
     float: right;
     margin-right: 2%;
 }
 
 .primary{
-    border-right: 5px solid #0d6efd;
     margin-left: 10%;
 }
 
 .warning{
-    border-bottom: 5px solid #ffc107;
-    margin-left: 12%;
+    margin-left: 18%;
 }
 
 .success{
-    border-bottom: 5px solid #198754;
     float: right;
     margin-right: 12%;
 }
 
-
 .item{
     width: 320px;
     border-radius: 10px;
-    box-shadow: 0 0 15px -8px #000;
+    box-shadow: 0 0 10px -4px #198754;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-top: 5%;
     padding: 0%;
+}
+
+.item:hover{
+    box-shadow: 0 0 8px -4px #198754;
+    
 }
 
 .item-title{
@@ -120,7 +128,7 @@
     width: 80px;
     height: 30px;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 50px !important;
 }
 
@@ -170,6 +178,7 @@
 .register{
     justify-content: center;
 }
+
 .register-form{
     margin: auto;
     width: 450px;
@@ -192,4 +201,76 @@
 
 .register-img{
     width: 180px;
+}
+
+/* Teams page */
+.team-card{
+    display: flex;
+    justify-content: center;
+}
+
+.card-div{
+    position: relative;
+    min-width: 400px;
+    min-height: 200px;
+    margin: 15px 20px;
+}
+
+.flip-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.card-div:hover .flip-card{
+    transform: rotateY(180deg);
+}
+
+.card-front{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    position: absolute;
+    /* border: 1px solid #f1f1f1; */
+    min-width: 100%;
+    min-height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* for Safari */
+    transform: rotateX(0deg); /* for Firefox */
+    perspective: 1000px;
+    padding: 10px;
+}
+
+.card-back{
+    position: absolute;
+    border: 1px solid #f1f1f1;
+    min-width: 100%;
+    min-height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* for Safari */
+    transform: rotateX(0deg); /* for Firefox */
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+.team-img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+.teams-txt{
+    padding: 10px;
+}
+
+/* ****************************** Footer *********************** */
+footer{
+    position: relative;
+    font-family:Georgia;
+    color: green;
+    width: 100vw;
+    height: 40px;
+    bottom: 0;
 }

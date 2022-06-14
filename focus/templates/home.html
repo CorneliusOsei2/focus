@@ -1,0 +1,42 @@
+{% load static %}
+{% include "head_partial.html" with page_title="Home"%}
+
+{% include "navbar.html"%}
+
+<main id="homepage">
+    <section id="landing">
+        <div class="landing-container container">
+            <h2 class="greet"> Welcome to FOCUS </h2>
+            <p> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                 nisi ut aliquip ex ea commodo consequat.
+                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+
+            <a class="contents-arrow" href="#contents"><img class="contents-arrow-img" src="{% static 'images/home/leaf.png' %}"> </img></a>
+        </div> 
+    </section>
+    
+
+    <section id="contents">
+        <div class="row">
+        {% for item in contents %}
+        <div class= "col-md-6 item-div" >
+            <div class="item {{item.style}}">
+                <div class="item-title"><h2>{{item.title}}</h2></div>
+                <div class="item-description">{{item.description}}</div>
+                <a class="item-link" href={{item.destination}}><button class="item-btn btn btn-outline-success"> Explore </button></a>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </section>
+
+    
+
+</main>
+
+{% include "footer.html"%}
+
+{% include "script_partial.html" %}
