@@ -4,7 +4,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.form-div {
+.contact-form-div {
     display: flex;
     flex-direction: column;
     width: 100%;
