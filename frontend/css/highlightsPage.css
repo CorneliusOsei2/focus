@@ -1,27 +1,16 @@
 body{
-    background-color: rgb(149, 160, 149);
+    background-color: white;
 }
-.slider-specific{
-    margin: auto;
-    width: 550px;
-    display: block;
+
+.carousel-item{
+    background: no-repeat scroll center scroll;
+    background-size: cover;
 }
 .carousel-inner{
     top: 17px;
     height: 590px;
     border:1px solid grey;
     border-radius: 12px;
-}
-
-.item, img{
-    height: 100%;
-    width:  100% !important;
-    border: 1px solid grey;
-    border-radius: 12px;
-}
-.carousel-item{
-    background: no-repeat scroll center scroll;
-    background-size: cover;
 }
 
 .carousel-item::before{
@@ -46,9 +35,28 @@ body{
     position: relative;
     margin: 0;
     bottom: 20px;
-    left: -150px;
+    left: -60px;
     width: 350px;
     color: white;
     background-color: black;
     opacity: 0.5;
+}
+@media only screen
+and (min-width: 1366px) {
+    .slider-specific{
+        margin: auto;
+        width: 750px;
+        display: block;
+    }    
+    
+}
+@media only screen
+and (min-width: 576px) 
+and (max-width: 1080){
+    .slider-specific{
+        margin: auto;
+        width: 400px;
+        display: block;
+    }    
+    
 }
