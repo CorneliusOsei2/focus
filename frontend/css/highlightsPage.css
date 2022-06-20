@@ -1,15 +1,18 @@
 body{
-    background-color: rgb(212, 214, 212);
+    background-color: white;
 }
-.slider{
-    position: relative;
-    margin: auto 20px;
-    width: 500px;
-}
+
 .carousel-item{
     background: no-repeat scroll center scroll;
     background-size: cover;
 }
+.carousel-inner{
+    top: 17px;
+    height: 590px;
+    border:1px solid grey;
+    border-radius: 12px;
+}
+
 .carousel-item::before{
     content: "";
     display: block;
@@ -17,11 +20,11 @@ body{
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: rgb(2, 2, 2);
+    background-color: rgb(82, 80, 80);
     opacity: 0.4;
 }
 .carousel-caption{
-    left: 20px;
+    left: 50px;
     bottom: 50px;
     padding-left: 200px;
     padding-right: 200px;
@@ -31,9 +34,29 @@ body{
 .caption-area{
     position: relative;
     margin: 0;
-    left: -100px;
-    width: 300px;
-    color: aliceblue;
+    bottom: 20px;
+    left: -20px;
+    width: 350px;
+    color: white;
     background-color: black;
     opacity: 0.5;
+}
+@media only screen
+and (min-width: 1366px) {
+    .slider-specific{
+        margin: auto;
+        width: 800px;
+        display: block;
+    }    
+    
+}
+@media only screen
+and (min-width: 576px) 
+and (max-width: 1080){
+    .slider-specific{
+        margin: auto;
+        width: 400px;
+        display: block;
+    }    
+    
 }
