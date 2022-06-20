@@ -203,7 +203,11 @@
     width: 180px;
 }
 
-/* Teams page */
+/************************ Teams page **********************/
+#team{
+    padding: 70px;
+
+}
 .team-card{
     display: flex;
     justify-content: center;
@@ -264,6 +268,31 @@
 .teams-txt{
     padding: 10px;
 }
+
+
+/* ****************************** Contact Page *********************** */
+
+
+form, .quick-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, textarea{
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.contact-submit-button{
+    margin:auto;
+    width: 40%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+ */
 
 /* ****************************** Footer *********************** */
 footer{
