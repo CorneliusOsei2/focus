@@ -1,1 +1,1 @@
-web: gunicorn focus/focus.wsgi
+web: gunicorn focus.focus.wsgi
