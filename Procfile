@@ -1,1 +1,1 @@
-web: gunicorn focus:app --log-file -
+web: gunicorn focus.wsgi
