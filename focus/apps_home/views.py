@@ -7,8 +7,3 @@ def home(request):
     """ Home page """
     contents_items = ContentsItem.objects.all()
     return render(request, 'home.html', {'contents': list(contents_items)})
-
-def contents(request):
-    """ Contents page """
-    contents_items = ContentsItem.objects.all()
-    return render(request, 'contents.html', {'contents': list(contents_items)})
