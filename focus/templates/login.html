@@ -1,0 +1,43 @@
+{% include "head_partial.html" with page_title="Login"%}
+
+<div class="container d-flex justify-content-center align-items-center mb-2">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="https://res.cloudinary.com/studypot-cloud/image/upload/v1629299068/StudyPot/Depositphotos_76660575_ds_izkpm5-min_dn6xtm.jpg"
+                    alt="" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">User Login</h5>
+
+                    <form action="login" method="POST" class="validated-form" novalidate>
+
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control shadow-none" type="text" id="username" name="username" autofocus required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control shadow-none" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3 text-center">
+                            <button class="btn btn-outline-success btn-rounded shadow-none">Login</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "script_partial.html" %}
