@@ -6,6 +6,3 @@ def team(request):
 
     team = Team.objects.all()
     return render(request, 'team.html', {'team': team})
-
-def contact(request):
-    return render(request, 'contact.html')
