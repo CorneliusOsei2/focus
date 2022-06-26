@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ContentsItem
+from .models import ContentsItem, Highlight
 
 # Register your models here.
-admin.site.register(ContentsItem)
+admin.site.register((ContentsItem, Highlight))
