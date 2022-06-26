@@ -27,7 +27,7 @@
                     <a class="item-link" href={{item.destination}}><button class="item-btn btn btn-outline-success"> Explore </button></a>
                 </div>
             </div> {% endcomment %}
-            
+
             <div class="col-md-6 item-div">
                 <div class="item {{item.style}}">
                     <div class="item-content">
@@ -45,7 +45,6 @@
 
 
     <section id="highlights">
-        <!--Slider-->
         <div class="slider-specific">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -60,6 +59,7 @@
                         <img src={{higlight.img}} class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="caption-area">
+                                <h4>{{higlight.title}}<h4/>
                                 <p>{{higlight.description}} </p>
                             </div>
                         </div>
