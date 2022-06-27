@@ -88,26 +88,30 @@
 }
 
 .danger {
+    background-image: url("https://images.wideopenpets.com/wp-content/uploads/2020/04/Boer-goats.png");
     float: right;
     margin-right: 2%;
 }
 
 .primary {
+    background-image: url("https://news.cornell.edu/sites/default/files/styles/full_size/public/2018-11/1127_ghana1.jpg?itok=au1HR9mf");
     margin-left: 10%;
 }
 
 .warning {
+    background-image: url("https://tothereal.files.wordpress.com/2013/05/ask-question-2-ce96e3e01c85a38a0d39c61cfae6d42c.jpg");
     margin-left: 18%;
 }
 
 .success {
+    background-image: url("https://tinyurl.com/4wxnx4rw");
     float: right;
     margin-right: 10%;
 }
 
 .item {
     color: var(--clr-neutral-100);
-    background-image: url("https://images.unsplash.com/photo-1655392698483-7360a36e59bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+    /* background-image: url("https://images.unsplash.com/photo-1655392698483-7360a36e59bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"); */
     background-size: cover;
     padding: 7rem 0 0;
     max-width: 40ch;
@@ -133,7 +137,7 @@
 .item-title {
     font-size: 1.5rem;
     width: max-content;
-    color: green;
+    color: wheat;
 }
 
 .item-title::after {
