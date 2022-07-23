@@ -1,10 +1,51 @@
 {% load static %} {% include "head_partial.html" with page_title="Home"%} {% include "navbar.html"%}
 
 <main id="homepage">
+    <div class="sidebar">
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-smile'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Home</a> </li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-donate-heart'></i>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Donate</a> </li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-cart-download'></i>
+                    </a>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Buy</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-log-in'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Log in</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <section id="landing">
         <div class="landing-container container">
             <h2 class="greet"> Welcome to FOCUS </h2>
-            <p>
+            <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
@@ -17,8 +58,8 @@
 
     <section id="contents">
         <div class="row">
-            {% for item in contents %}
-            {% comment %} <div class="col-md-6 item-div">
+            {% for item in contents %} {% comment %}
+            <div class="col-md-6 item-div">
                 <div class="item {{item.style}}">
                     <div class="item-title">
                         <h2>{{item.title}}</h2>
@@ -37,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            
+
             {% endfor %}
         </div>
     </section>
@@ -59,8 +100,9 @@
                         <img src={{higlight.img}} class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="caption-area">
-                                <h4>{{higlight.title}}<h4/>
-                                <p>{{higlight.description}} </p>
+                                <h4>{{higlight.title}}
+                                    <h4/>
+                                    <p>{{higlight.description}} </p>
                             </div>
                         </div>
                     </div>
