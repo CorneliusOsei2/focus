@@ -4,10 +4,11 @@
 
 .navbar {
     width: 100vw;
+    padding: 0;
     top: 0;
     position: fixed;
     height: 60px;
-    background-color: rgb(213, 217, 209);
+    background-color: rgb(230, 231, 233);
     z-index: 2;
 }
 
@@ -17,6 +18,15 @@
 
 .icon-img {
     height: 35px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        height: 50px;
+    }
+    .nav-img {
+        height: 30px;
+    }
 }
 
 
@@ -174,7 +184,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .landing-container {
         margin-left: 0;
     }
@@ -184,7 +194,7 @@
         bottom: 0;
         padding: 0%;
         background-color: rgb(213, 217, 209);
-        height: 10%;
+        height: 50px;
         top: unset
     }
     .sidebar .nav-links {
