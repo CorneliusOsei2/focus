@@ -1,37 +1,5 @@
-{% load static %} {% include "head_partial.html" with page_title="Home"%} {% include "navbar.html"%}
-
+{% load static %} {% include "head_partial.html" with page_title="Home"%} {% include "navbar.html"%} {% include "sidebar.html"%}
 <main id="homepage">
-    <div class="sidebar">
-        <ul class="nav-links">
-            <li>
-                <a href="/">
-                    <i class='bx bx-home-smile'></i>
-                </a>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Home</a> </li>
-                </ul>
-            </li>
-            <li>
-                <div class="iocn-link"><a href="/invest"><i class='bx bx-donate-heart'></i></a></div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Donate</a> </li>
-                </ul>
-            </li>
-            <li>
-                <div class="iocn-link"><a href="#"><i class='bx bx-cart-download'></i></a></div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Buy</a> </li>
-                </ul>
-            </li>
-            <li>
-                <a href="/login"><i class='bx bx-log-in'></i></a>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Log in</a> </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
     <section id="landing">
         <div class="landing-container container">
             <h2 class="greet"> Welcome to FOCUS </h2>
@@ -108,6 +76,10 @@
             <span class="visually-hidden">Next</span>
             </button>
             </div>
+        </div>
+
+        <div id="sponsors">
+
         </div>
     </section>
 

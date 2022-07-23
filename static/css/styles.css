@@ -608,6 +608,22 @@
 }
 
 
+/* ***************** Login User Page *******************************/
+
+.login-page {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.login-page .row {
+    width: 400px;
+}
+
+.login-page img {
+    height: 300px;
+}
+
+
 /************************ Teams page **********************/
 
 #team {
