@@ -36,7 +36,7 @@
     display: flex;
     position: fixed;
     top: 0;
-    left: 4;
+    left: 4px;
     width: 78px;
     height: 100vh;
     z-index: 100;
@@ -84,7 +84,7 @@
 .sidebar .nav-links li {
     list-style: none;
     position: relative;
-    transition: all 0.4 ease;
+    transition: all 0.4s ease;
     padding-bottom: 15px;
 }
 
@@ -213,6 +213,14 @@
 }
 
 
+/* **************************** Sidebar Page *******************************************/
+
+#homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* **************************** Landing Page *******************************************/
 
 #landing {
@@ -227,7 +235,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 60px;
-    padding-top: 10%;
+    padding-top: 25%;
     padding-bottom: 320px;
     color: black;
     width: 40%;
@@ -239,10 +247,15 @@
     margin: auto;
 }
 
-.alert-div {
+div.alert-div {
     margin-top: 7%;
+    width: 100vw;
+    margin-left: 10%;
+    margin-right: 10%;
     z-index: 3;
-    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
 }
 
 .description {
@@ -422,7 +435,7 @@
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
-        transition-delay: 0 !important;
+        transition-delay: 0s !important;
     }
 }
 
@@ -524,7 +537,7 @@
 /* *****************  Highlights Page *******************************/
 
 .carousel-item {
-    background: no-repeat scroll center scroll;
+    background: no-repeat center scroll;
     background-size: cover;
 }
 
@@ -574,7 +587,7 @@
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 1080) {
+@media only screen and (min-width: 576px) and (max-width: 1080px) {
     .slider-specific {
         margin: auto;
         width: 400px;
@@ -726,7 +739,7 @@ textarea {
     text-transform: uppercase;
 }
 
-*/
+
 /* ****************************** Footer *********************** */
 
 footer {
