@@ -10,7 +10,7 @@ class ContentsItem(Model):
 class Highlight(Model):
     title =  CharField(max_length=100, null=False, default='')
     imgLink = CharField(max_length=1000, null=False, default='')
-    style = CharField(max_length=100, null=False, default='')
+    style = CharField(max_length=50, default='', null=True)
     description = CharField(max_length=300, null=False, default='')
 
    
