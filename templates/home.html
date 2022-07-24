@@ -1,6 +1,18 @@
 {% load static %} {% include "head_partial.html" with page_title="Home"%} {% include "navbar.html"%} {% include "sidebar.html"%}
 <main id="homepage">
+
+
     <section id="landing">
+        <div class="alert-div">
+            <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                <div>
+                    Still in Development. Thank you!
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+
         <div class="landing-container container">
             <h2 class="greet"> About Us </h2>
             <p class="description">
