@@ -15,7 +15,7 @@
 
         <div class="landing-container container">
             <h2 class="greet"> About Us </h2>
-            {% if not request.user.is_authenticated%}
+            {% if not request.user.is_authenticated %}
             <div class="prompts">
                 <a class="login-prompt">Login</a>
                 <a class="register-prompt">Register</a>
@@ -34,17 +34,7 @@
 
     <section id="contents">
         <div class="row">
-            {% for item in contents %} {% comment %}
-            <div class="col-md-6 item-div">
-                <div class="item {{item.style}}">
-                    <div class="item-title">
-                        <h2>{{item.title}}</h2>
-                    </div>
-                    <div class="item-description">{{item.description}}</div>
-                    <a class="item-link" href={{item.destination}}><button class="item-btn btn btn-outline-success"> Explore </button></a>
-                </div>
-            </div> {% endcomment %}
-
+            {% for item in contents %} 
             <div class="col-md-6 item-div">
                 <div class="item {{item.style}}">
                     <div class="item-content">
@@ -72,7 +62,7 @@
                 <div class="carousel-inner">
 
                     {% for higlight in highlights %}
-                    <div class="carousel-item active">
+                    <div class="carousel-item {{higlight.style}}">
                         <img src={{higlight.img}} class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="caption-area">
