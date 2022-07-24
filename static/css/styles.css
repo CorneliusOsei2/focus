@@ -20,6 +20,12 @@
     height: 35px;
 }
 
+.username {
+    margin-right: 20px;
+    font-family: Georigia;
+    color: green;
+}
+
 @media screen and (max-width: 700px) {
     .navbar {
         height: 50px;
@@ -235,7 +241,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 60px;
-    padding-top: 25%;
+    padding-top: 15%;
     padding-bottom: 320px;
     color: black;
     width: 40%;
