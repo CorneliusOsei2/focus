@@ -252,10 +252,7 @@ div.alert-div {
     width: 100vw;
     margin-left: 10%;
     margin-right: 10%;
-    z-index: 3;
-    margin-left: 5%;
-    margin-right: 5%;
-    position: relative;
+    position: absolute;
 }
 
 .description {
