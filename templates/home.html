@@ -21,7 +21,7 @@
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
 
-            {% if not user.is_authenticated %}
+            {% if not request.user.is_authenticated %}
             <div class="prompts">
                 <a class="login-prompt">Login</a>
                 <a class="register-prompt">Register</a>

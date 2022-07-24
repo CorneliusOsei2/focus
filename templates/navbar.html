@@ -7,7 +7,7 @@
         <div class="ms-auto mb-2 mb-xl-0">
             <h5 class="icon-txt">
                 <div class="d-flex">
-                    {% if user.is_authenticated %}
+                    {% if request.user.is_authenticated %}
                     <p class="username">{{ user.username}}</p>
                     {% endif %}
                     <img class="icon-img" src="{% static 'images/home/notification.png' %}" alt=""> </h5>
