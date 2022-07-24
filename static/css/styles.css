@@ -441,6 +441,7 @@ div.alert-div {
 /* *****************  Highlights Page *******************************/
 
 #highlights-page {
+    background-color: rgb(230, 231, 233);
     min-height: 85vh;
 }
 
@@ -651,6 +652,7 @@ textarea {
 /* ****************************** Footer *********************** */
 
 footer {
+    background-color: rgb(230, 231, 233);
     position: relative;
     font-family: Georgia;
     color: green;
