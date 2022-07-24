@@ -259,12 +259,14 @@ div.alert-div {
     margin-left: 10%;
     margin-right: 10%;
     position: absolute;
+    box-shadow: 2px solid black;
 }
 
 .description {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: auto;
     padding: 0 20px;
+    font-size: 20px;
 }
 
 .contents-arrow {
@@ -538,6 +540,10 @@ div.alert-div {
 
 
 /* *****************  Highlights Page *******************************/
+
+#highlights-page {
+    min-height: 100vh;
+}
 
 .carousel-item {
     background: no-repeat center scroll;
