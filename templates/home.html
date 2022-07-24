@@ -15,16 +15,18 @@
 
         <div class="landing-container container">
             <h2 class="greet"> About Us </h2>
-            {% if not request.user.is_authenticated %}
+            
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+
+            {% if not user.is_authenticated %}
             <div class="prompts">
                 <a class="login-prompt">Login</a>
                 <a class="register-prompt">Register</a>
             </div>
             {% endif %}
-            <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
 
             <a class="contents-arrow" href="#contents"><img class="contents-arrow-img" src="{% static 'images/home/leaf.png' %}"> </img>
             </a>
@@ -62,6 +64,17 @@
                 <div class="carousel-inner">
 
                     {% for higlight in highlights %}
+                    <div class="carousel-item {{higlight.style}}">
+                        <img src={{higlight.img}} class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="caption-area">
+                                <h4>{{higlight.title}}
+                                </h4>
+                                <p>{{higlight.description}} </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="carousel-item {{higlight.style}}">
                         <img src={{higlight.img}} class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
