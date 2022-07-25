@@ -19,7 +19,7 @@
             <span class="sub-menu">Invest</span>
         </li>
 
-        {% if request.user.is_authenticated %}
+        {% if not request.user.is_authenticated %}
         <li class="iocn-link">
             <a href="/login"><i class='bx bx-log-in' data-bs-toggle="tooltip" data-bs-placement="right"></i></a>
             <span class="sub-menu">Invest</span>
