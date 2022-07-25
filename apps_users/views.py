@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.contrib import messages
 from .models import CustomUser
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 
 def register(request):
@@ -35,6 +35,7 @@ def register(request):
                 email=email,
                 password=password
             )
+            login(request, new_user)
             return redirect("login")
         else:
             messages.info(request, "Passwords are not the same!")
@@ -43,7 +44,7 @@ def register(request):
     elif (request.method == "GET"):
         return render(request, 'register.html')
 
-def login(request):
+def user_login(request):
     """ Log in a user """
     
     if (request.method == "POST"):
