@@ -50,9 +50,9 @@ def login(request):
         username, password = request.POST['username'], request.POST['password']
         if username and password:
             user = authenticate(username=username, password=password)
-            
+
             if user is not None:
-                login(user)
+                login(request, user)
                 return redirect("/")
         return HttpResponse("sorry")
     else:
