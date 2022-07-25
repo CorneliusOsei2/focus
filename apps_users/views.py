@@ -58,3 +58,8 @@ def user_login(request):
         return HttpResponse("sorry")
     else:
         return render(request, 'login.html')
+
+def user_logout(request):
+    """Log user out"""
+    logout(request)
+    return redirect("/")

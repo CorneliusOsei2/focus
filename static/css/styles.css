@@ -259,6 +259,28 @@ div.alert-div {
     margin-top: 150px
 }
 
+.prompts {
+    margin: auto;
+    margin-top: 5%;
+}
+
+.prompts .btn {
+    margin: auto;
+    width: 150px;
+    font-weight: 700;
+    font-size: 18px;
+    color: green;
+    font-family: Times New Roman;
+    border-radius: 20px;
+    border: 1px solid green;
+    margin: auto;
+}
+
+.prompts .btn:hover {
+    color: white;
+    background-color: green;
+}
+
 .contents-arrow-img {
     height: 70px;
     width: 50px;

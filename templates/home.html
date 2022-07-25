@@ -23,8 +23,14 @@
 
             {% if not request.user.is_authenticated %}
             <div class="prompts">
-                <a class="login-prompt">Login</a>
-                <a class="register-prompt">Register</a>
+                <a class="btn register-prompt" href="/register"> Register </a>
+                <a class="btn login-prompt" href="/login"> Login </a>
+            </div>
+            {% endif %}
+
+            {% if request.user.is_authenticated %}
+            <div class="prompts">
+                <a class="btn logout-prompt" href="/logout"> Logout </a>
             </div>
             {% endif %}
 
