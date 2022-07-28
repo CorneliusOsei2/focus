@@ -15,9 +15,20 @@
 #careers-page .row .btn{
     width: 50px;
     background-color:#AFE1AF;
-    color: #AFE1AF;
 }
 
-#more-info{
-    background-color:#AFE1AF;
+#careers-page #more-info{
+    border: 1px solid #AFE1AF;
+    padding-bottom: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+#careers-page #card{
+    border: 1px solid #AFE1AF;
+    height: 50px;
+}
+
+#careers-page #apply {
+    width: 90px;
 }
