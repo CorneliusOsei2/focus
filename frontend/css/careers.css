@@ -4,22 +4,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.btn-toolbar{
-    display: flex;
-    justify-content: space-between;
+#careers-page .btn{
+    outline: none;
+    border-radius: 20%;
+    border: 1px solid lightblue;
+    background-color: white;
 }
 
-#btn1{
-    background-color:#AFE1AF;
-    color: #AFE1AF;
-}
 
-#btn2{
-    background-color:#AFE1AF;
-    color: #AFE1AF;
-}
-
-#btn3{
+#careers-page .row .btn{
+    width: 50px;
     background-color:#AFE1AF;
     color: #AFE1AF;
 }
