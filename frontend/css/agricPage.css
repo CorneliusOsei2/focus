@@ -65,7 +65,7 @@ img{
 
 .post_thumbnail{
     border-radius: 5rem 0;
-    border: 1rem solid green;
+    border: 0.5rem solid green;
     overflow: hidden;
     margin-bottom: 1.6rem;
 }
@@ -114,6 +114,35 @@ img{
     h5{
         font-size: 0.8rem;
     }
+    .featured_container{
+        gap: 3rem;
+    }
+    .posts_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
 }
 
+/* ================Small Container ==============*/
 
+@media screen and (max-width: 600px) {
+    .section{
+        margin-top: 2rem;
+    }
+    .featured{
+        margin-top: 6rem;
+    }
+    .featured_container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .posts_container{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        width: 88%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
