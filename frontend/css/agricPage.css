@@ -101,6 +101,7 @@ img{
     margin-bottom: 5rem;
 }
 
+/* ==============Medium Devices================== */
 @media screen and (max-width: 1024px) {
     .container{
         width: 88%;
@@ -123,7 +124,7 @@ img{
     }
 }
 
-/* ================Small Container ==============*/
+/* ================Small Devices ==============*/
 
 @media screen and (max-width: 600px) {
     .section{
