@@ -464,19 +464,13 @@ div.alert-div {
 
 #highlights-page {
     background-color: rgb(230, 231, 233);
-    min-height: 85vh;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .carousel-item {
     background: no-repeat center scroll;
     background-size: cover;
-}
-
-.carousel-inner {
-    top: 17px;
-    height: 590px;
-    border: 1px solid grey;
-    border-radius: 12px;
 }
 
 .carousel-item::before {
@@ -513,7 +507,6 @@ div.alert-div {
 @media only screen and (min-width: 1366px) {
     .slider-specific {
         margin: auto;
-        width: 800px;
         display: block;
     }
 }
@@ -521,7 +514,6 @@ div.alert-div {
 @media only screen and (min-width: 576px) and (max-width: 1080px) {
     .slider-specific {
         margin: auto;
-        width: 400px;
         display: block;
     }
 }

@@ -71,7 +71,7 @@
 
                     {% for higlight in highlights %}
                     <div class="carousel-item {{higlight.style}}">
-                        <img src="{{higlight.imgLink}}" class="d-block w-100" alt="...">
+                        <img {% static 'images/home/leaf.png' %} class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="caption-area">
                                 <h4>{{higlight.title}}
