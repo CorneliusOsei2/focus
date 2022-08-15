@@ -318,36 +318,30 @@ div.alert-div {
 
 #contents {
     overflow: hidden;
-    padding-top: 70px;
+    padding-top: 100px;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     padding-bottom: 30px;
+    padding-left: 5%;
 }
 
 .danger {
     background-image: url("https://images.wideopenpets.com/wp-content/uploads/2020/04/Boer-goats.png");
-    float: right;
-    margin-right: 2%;
 }
 
 .primary {
     background-image: url("https://news.cornell.edu/sites/default/files/styles/full_size/public/2018-11/1127_ghana1.jpg?itok=au1HR9mf");
-    margin-left: 10%;
 }
 
 .warning {
     background-image: url("https://tothereal.files.wordpress.com/2013/05/ask-question-2-ce96e3e01c85a38a0d39c61cfae6d42c.jpg");
-    margin-left: 18%;
 }
 
 .success {
     background-image: url("https://tinyurl.com/4wxnx4rw");
-    float: right;
-    margin-right: 10%;
 }
 
 .item {
     color: var(--clr-neutral-100);
-    /* background-image: url("https://images.unsplash.com/photo-1655392698483-7360a36e59bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"); */
     background-size: cover;
     padding: 7rem 0 0;
     max-width: 40ch;
@@ -357,6 +351,7 @@ div.alert-div {
     margin-bottom: 1rem;
     /* height: 320px; */
     width: 310px;
+    margin: auto;
 }
 
 .item:hover,
@@ -463,20 +458,20 @@ div.alert-div {
 /* *****************  Highlights Page *******************************/
 
 #highlights-page {
-    background-color: rgb(230, 231, 233);
-    min-height: 85vh;
+    height: 90vh;
+    min-width: 100vw;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.carousel-inner {
+    height: 100%;
+    border: unset;
 }
 
 .carousel-item {
     background: no-repeat center scroll;
     background-size: cover;
-}
-
-.carousel-inner {
-    top: 17px;
-    height: 590px;
-    border: 1px solid grey;
-    border-radius: 12px;
 }
 
 .carousel-item::before {
@@ -492,7 +487,7 @@ div.alert-div {
 
 .carousel-caption {
     left: 50px;
-    bottom: 50px;
+    bottom: 4;
     padding-left: 200px;
     padding-right: 200px;
     font-weight: 600;
@@ -502,28 +497,10 @@ div.alert-div {
 .caption-area {
     position: relative;
     margin: 0;
-    bottom: 20px;
-    left: -20px;
     width: 350px;
     color: white;
     background-color: black;
     opacity: 0.5;
-}
-
-@media only screen and (min-width: 1366px) {
-    .slider-specific {
-        margin: auto;
-        width: 800px;
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 1080px) {
-    .slider-specific {
-        margin: auto;
-        width: 400px;
-        display: block;
-    }
 }
 
 
@@ -587,7 +564,7 @@ div.alert-div {
 
 .card-div {
     position: relative;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 200px;
     margin: 15px 20px;
 }
@@ -668,6 +645,64 @@ textarea {
     margin-top: 10px;
     font-size: 1.3rem;
     text-transform: uppercase;
+}
+
+
+/* ****************************** Careers Page *********************** */
+
+#careers-page {
+    padding-left: 5%;
+}
+
+#careers-page .card-body {
+    padding-left: 5%;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+#careers-page card {
+    border-radius: 15px;
+}
+
+.open-positions span {
+    margin-top: 5px;
+    color: green;
+    font-weight: 700;
+}
+
+.open-positions p:hover {
+    color: green;
+}
+
+#careers-page .btn {
+    outline: none;
+    border-radius: 20%;
+    border: 1px solid lightblue;
+    background-color: white;
+}
+
+#careers-page .row .btn {
+    width: 50px;
+    background-color: #AFE1AF;
+}
+
+#careers-page #more-info {
+    border: 1px solid #AFE1AF;
+    padding-bottom: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+#careers-page #card {
+    border: 1px solid #AFE1AF;
+    height: 50px;
+}
+
+#careers-page #apply {
+    width: 90px;
 }
 
 

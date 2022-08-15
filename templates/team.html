@@ -1,7 +1,4 @@
-{% load static %}
-{% include "head_partial.html" with page_title="Team"%}
-
-{% include "navbar.html"%}
+{% load static %} {% include "head_partial.html" with page_title="Team"%} {% include "navbar.html"%}
 <div class="container-fluid">
 
     <section id="team">
@@ -15,7 +12,7 @@
                     <div class="flip-card">
                         <div class="card-front">
                             <div class="teams-img d-flex align-items-center justify-content-center">
-                                <img src="{% static 'images/team/3.jpg' %}" class="team-img" alt="Team member image">
+                                <img src={{member.image}} class="team-img" alt="Team member image">
                             </div>
 
                             <div class="teams-txt d-flex align-items-center justify-content-center flex-column">
@@ -33,13 +30,18 @@
             </div>
 
             {% endfor %}
-        
+
         </div>
+
+        <div class="apply-careers">
+            <div class="btn btn-outline-success">Check Open Roles</div>
+        </div>
+
     </section>
 
 
-    <section class="contact" >
-        
+    <section class="contact">
+
         <h2 class="text-center"> Contact Us </h2>
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-md-6">
@@ -49,35 +51,35 @@
                     </div>
 
                     <div class="email">
-                        Email: <a href="#">focusgroup@gmail.com</a> 
+                        Email: <a href="#">focusgroup@gmail.com</a>
                     </div>
 
                     <div class="social-media">
 
                     </div>
-                        
-                        
+
+
                     </p>
                 </div>
-            
+
             </div>
 
             <div class="col-md-6 d-flex justify-content-center">
-                    <form action="" method="get" class="contact-form">
-                        <input type="text" class="form-control shadow-none" placeholder="Name">
-                        <input type="email" class="form-control shadow-none" placeholder="Email Address">
-                        <input type="tel" class="form-control shadow-none" placeholder="Phone Number">
-                        <textarea class="form-control message shadow-none" name=""  placeholder="Message"></textarea>
+                <form action="" method="get" class="contact-form">
+                    <input type="text" class="form-control shadow-none" placeholder="Name">
+                    <input type="email" class="form-control shadow-none" placeholder="Email Address">
+                    <input type="tel" class="form-control shadow-none" placeholder="Phone Number">
+                    <textarea class="form-control message shadow-none" name="" placeholder="Message"></textarea>
 
-                        <button class="btn btn-outline-success contact-submit-button" type="button">Submit</button>
+                    <button class="btn btn-outline-success contact-submit-button" type="button">Submit</button>
 
-                    </form>
-                </div>
-                </div>
+                </form>
             </div>
-
         </div>
-    </section>
+</div>
+
+</div>
+</section>
 
 
 

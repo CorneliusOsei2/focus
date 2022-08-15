@@ -1,0 +1,44 @@
+{% load static %} {% include "head_partial.html" with page_title="Careers"%} {% include "navbar.html"%} {% include "sidebar.html"%}
+
+<main id="careers-page">
+
+    <h1 class="mb-4 mx-3 d-flex justify-content-center">Careers</h1>
+
+    <div class="row">
+        <div class="col-md-4 my-4">
+
+            <ul class="open-positions">
+                {% for job in openings %}
+                <div class="card-body">
+                    <span>Role: </span> {{job.title}}
+                    <div class="job-description">
+                        <span> Description</span> <br>
+                        <p>{{job.description}} </p>
+                    </div>
+                    <div class="job-qualifications">
+                        <span>Qualifications</span> <br>
+                        <p>{{job.qualifications}} </p>
+                    </div>
+                    <div class="job-responsibilities">
+                        <span>Responsibilities</span> <br>
+                        <p> {{job.responsibilities}}</p>
+                    </div>
+                    <div class="job-openings">
+                        <span>Number of openings</span>: {{job.openings}}
+                    </div>
+                    <div class="job-salary">
+                        <span>Compensation (paid bi-weekly): </span> {{job.salary}}
+                    </div>
+                    <div class="job-period">
+                        <span>Period: </span> {{job.period}}
+                    </div>
+                </div>
+                {% endfor%}
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</main>
