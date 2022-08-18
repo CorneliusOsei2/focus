@@ -14,7 +14,12 @@ def business(request, business_id):
     return render(request, 'businesses.html', {'business':business})
 
 def careers(request):
-    team = Team.objects.filter(id=1).first()
-    openings = team.job_set.all()
-    return render(request, 'career_openings.html', {'openings': openings})
+    marketing_openings = Team.objects.filter(name='Marketing').first().job_set.all()
+    agriculture_openings = Team.objects.filter(name='Agriculture').first().job_set.all()
+    construction_openings = Team.objects.filter(name='Construction').first().job_set.all()
+    return render(request, 
+        'career_openings.html', 
+        {'marketing_openings': marketing_openings, 
+        'agriculture_openings': agriculture_openings,
+        'construction_openings':construction_openings})
     

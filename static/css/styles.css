@@ -2,6 +2,10 @@
 
 /* **************************** Navbar *******************************************/
 
+body {
+    overflow-x: hidden;
+}
+
 .navbar {
     width: 100vw;
     padding: 0;
@@ -36,7 +40,7 @@
 }
 
 
-/* **************************** Sidebar Page *******************************************/
+/* **************************** Sidebar Component *******************************************/
 
 .sidebar {
     display: flex;
@@ -651,16 +655,18 @@ textarea {
 /* ****************************** Careers Page *********************** */
 
 #careers-page {
-    padding-left: 5%;
+    overflow-x: hidden;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%
 }
 
-#careers-page .card-body {
-    padding-left: 5%;
-    height: 500px;
+#careers-page .opening-card {
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 600px;
     border: 2px solid black;
     border-radius: 5px;
-    scroll-behavior: smooth;
-    overflow: auto;
 }
 
 #careers-page card {
@@ -671,22 +677,6 @@ textarea {
     margin-top: 5px;
     color: green;
     font-weight: 700;
-}
-
-.open-positions p:hover {
-    color: green;
-}
-
-#careers-page .btn {
-    outline: none;
-    border-radius: 20%;
-    border: 1px solid lightblue;
-    background-color: white;
-}
-
-#careers-page .row .btn {
-    width: 50px;
-    background-color: #AFE1AF;
 }
 
 #careers-page #more-info {
@@ -701,8 +691,18 @@ textarea {
     height: 50px;
 }
 
-#careers-page #apply {
-    width: 90px;
+.job-apply-div {
+    scroll-behavior: smooth;
+    overflow: auto;
+    height: 550px;
+}
+
+.job-apply-btn-div {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
 }
 
 

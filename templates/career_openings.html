@@ -2,14 +2,53 @@
 
 <main id="careers-page">
 
-    <h1 class="mb-4 mx-3 d-flex justify-content-center">Careers</h1>
+    <h1 class="text-center">Careers</h1>
 
-    <div class="row">
-        <div class="col-md-4 my-4">
+    <div class="row open-positions container">
+        <div class="col-md-4">
+            <h4>Agriculture</h4>
+            {% if not agriculture_openings %}
+            <div class="alert alert-primary" role="alert">
+                No open positions now. Please check again later. Thank you!
+            </div>
+            {% endif %} {% for job in agriculture_openings %}
+            <div class="opening-card">
+                <span>Role: </span> {{job.title}}
+                <div class="job-description">
+                    <span> Description</span> <br>
+                    <p>{{job.description}} </p>
+                </div>
+                <div class="job-qualifications">
+                    <span>Qualifications</span> <br>
 
-            <ul class="open-positions">
-                {% for job in openings %}
-                <div class="card-body">
+                    <p>{{job.qualifications}} </p>
+                </div>
+                <div class="job-responsibilities">
+                    <span>Responsibilities</span> <br>
+                    <p> {{job.responsibilities}}</p>
+                </div>
+                <div class="job-openings">
+                    <span>Number of openings</span>: {{job.openings}}
+                </div>
+                <div class="job-salary">
+                    <span>Compensation (paid bi-weekly): </span> {{job.salary}}
+                </div>
+                <div class="job-period">
+                    <span>Period: </span> {{job.period}}
+                </div>
+            </div>
+            {% endfor%}
+        </div>
+
+        <div class="col-md-4">
+            <h4>Marketing</h4>
+            {% if not marketing_openings %}
+            <div class="alert alert-primary" role="alert">
+                No open positions now. Please check again later. Thank you!
+            </div>
+            {% endif %} {% for job in marketing_openings %}
+            <div class="opening-card">
+                <div class="job-apply-div">
                     <span>Role: </span> {{job.title}}
                     <div class="job-description">
                         <span> Description</span> <br>
@@ -33,10 +72,55 @@
                         <span>Period: </span> {{job.period}}
                     </div>
                 </div>
-                {% endfor%}
-            </ul>
+                <div class="job-apply-btn-div">
+                    <button class="btn btn-outline-success job-apply-btn">Apply Now!</button>
+                </div>
+            </div>
 
+            {% endfor%}
         </div>
+
+        <div class="col-md-4">
+            <h4>Construction</h4>
+            {% if not construction_openings %}
+            <div class="alert alert-primary" role="alert">
+                No open positions now. Please check again later. Thank you!
+            </div>
+            {% endif %} {% for job in construction_openings %}
+            <div class="opening-card">
+                <span>Role: </span> {{job.title}}
+
+                <div class="job-app-div">
+                    <div class="job-description">
+                        <span> Description</span> <br>
+                        <p>{{job.description}} </p>
+                    </div>
+                    <div class="job-qualifications">
+                        <span>Qualifications</span> <br>
+                        <p>{{job.qualifications}} </p>
+                    </div>
+                    <div class="job-responsibilities">
+                        <span>Responsibilities</span> <br>
+                        <p> {{job.responsibilities}}</p>
+                    </div>
+                    <div class="job-openings">
+                        <span>Number of openings</span>: {{job.openings}}
+                    </div>
+                    <div class="job-salary">
+                        <span>Compensation (paid bi-weekly): </span> {{job.salary}}
+                    </div>
+                    <div class="job-period">
+                        <span>Period: </span> {{job.period}}
+                    </div>
+                </div>
+            </div>
+            <div class="job-apply-btn-div">
+                <button class="btn btn-outline-success job-apply-btn">Apply Now!</button>
+            </div>
+            {% endfor%}
+        </div>
+
+
 
 
     </div>
