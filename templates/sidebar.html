@@ -1,0 +1,36 @@
+{% load static %} {% include "head_partial.html"%}
+
+<div class="sidebar">
+    <ul class="nav-links">
+
+
+        <li class="iocn-link">
+            <a href="/"><i class='bx bx-home-smile' data-bs-toggle="tooltip" data-bs-placement="right"></i></a>
+            <span class="sub-menu">Invest</span>
+        </li>
+
+        <li class="iocn-link">
+            <a href="/invest"><i class='bx bx-donate-heart' data-bs-toggle="tooltip" data-bs-placement="right"></i></a>
+            <span class="sub-menu">Invest</span>
+        </li>
+
+        <li class="iocn-link">
+            <a href="/invest"><i class='bx bx-cart-download' data-bs-toggle="tooltip" data-bs-placement="right"></i></a>
+            <span class="sub-menu">Invest</span>
+        </li>
+
+        {% if not request.user.is_authenticated %}
+        <li class="iocn-link">
+            <a href="/login"><i class='bx bx-log-in' data-bs-toggle="tooltip" data-bs-placement="right"></i></a>
+            <span class="sub-menu">Invest</span>
+        </li>
+        {% endif %}
+
+        <li class="iocn-link">
+            <a href="/login"><i class='bx bx-log-in' data-bs-toggle="tooltip" data-bs-placement="right"></i></a>
+            <span class="sub-menu">Invest</span>
+        </li>
+
+
+    </ul>
+</div>
